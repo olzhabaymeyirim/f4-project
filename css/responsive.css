@@ -1,0 +1,643 @@
+/* =========================================================
+   SHARED — TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    /* =====================================================
+       SHARED — HEADER / NAVIGATION
+    ===================================================== */
+
+    .header {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-left: 0;
+    }
+
+    .menu a,
+    .menu select {
+        height: 36px;
+        padding: 0 13px;
+        font-size: 13px;
+    }
+
+
+    /* =====================================================
+       MEYIRIM — INDEX / HOME RESPONSIVE
+    ===================================================== */
+
+    .main-part {
+        height: 70vh;
+        min-height: 520px;
+    }
+
+    .main-text {
+        width: 90%;
+    }
+
+    .main-text h1 {
+        font-size: 60px;
+    }
+
+    .about {
+        padding: 80px 6%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about h2 {
+        font-size: 48px;
+    }
+
+    .about-visual img {
+        height: 430px;
+    }
+
+    .otzyv {
+        padding: 80px 5%;
+    }
+
+    .otzyv-title h2 {
+        font-size: 48px;
+    }
+
+    .otzyv-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .otzyv-card img {
+        height: 250px;
+    }
+
+    .write-otzyv {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 35px;
+    }
+
+    .student-offer {
+        padding: 75px 6%;
+    }
+
+    .student-offer h2 {
+        font-size: 48px;
+    }
+
+    .final-cta {
+        padding: 90px 20px;
+    }
+
+    .final-cta h2 {
+        font-size: 50px;
+    }
+
+
+    /* =====================================================
+       ANEL — MOVIES RESPONSIVE
+    ===================================================== */
+
+    .intro {
+        min-height: 500px;
+        background-position: center 60%;
+    }
+
+    .intro h1 {
+        font-size: 48px;
+    }
+
+    .griid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .movie-image-box {
+        height: 320px;
+    }
+
+    .movie-banner {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+    /* =====================================================
+       AIZADA — SCHEDULE RESPONSIVE
+    ===================================================== */
+
+    body:has(.schedule-intro) main {
+        width: 90%;
+    }
+
+    .schedule-intro {
+        min-height: 350px;
+        margin: 30px 0;
+        padding: 60px 20px;
+    }
+
+    .schedule-intro h1 {
+        font-size: 44px;
+    }
+
+    .schedule-intro p {
+        font-size: 18px;
+    }
+
+    .schedule-filters {
+        gap: 15px;
+    }
+
+    .movie-card {
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .movie-card img {
+        width: 140px;
+        height: 200px;
+    }
+
+    .ticket-prices {
+        min-width: 220px;
+        padding-left: 25px;
+    }
+
+    .info-container {
+        flex-wrap: wrap;
+    }
+
+    .info-card {
+        min-width: 45%;
+    }
+
+
+    /* =====================================================
+       AKNUR — CONTACT RESPONSIVE
+    ===================================================== */
+
+    .booking {
+        width: 90%;
+        margin: 50px auto;
+        padding: 35px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .booking-info {
+        padding: 10px;
+    }
+
+    .booking-info h1 {
+        font-size: 44px;
+    }
+
+    .booking-form {
+        padding: 25px;
+    }
+
+    .faq {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .contact-us {
+        width: 90%;
+        margin: 60px auto;
+        padding: 40px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 35px;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SHARED — MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    /* =====================================================
+       SHARED — HEADER / NAVIGATION
+    ===================================================== */
+
+    .header {
+        padding: 18px 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .menu {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .menu a,
+    .menu select {
+        height: 35px;
+        padding: 0 12px;
+        font-size: 13px;
+    }
+
+
+    /* =====================================================
+       MEYIRIM — INDEX / HOME RESPONSIVE
+    ===================================================== */
+
+    .main-part {
+        height: 500px;
+        min-height: 500px;
+    }
+
+    .main-text {
+        width: 90%;
+        gap: 15px;
+    }
+
+    .main-text h1 {
+        font-size: 42px;
+    }
+
+    .main-text p {
+        font-size: 12px;
+    }
+
+    body:has(.main-part) .button,
+    body:has(.main-part) button {
+        padding: 11px 20px;
+        font-size: 14px;
+    }
+
+    .about {
+        padding: 65px 6%;
+        gap: 30px;
+    }
+
+    .about h2 {
+        font-size: 38px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+    }
+
+    .about-visual img {
+        height: 330px;
+    }
+
+    .otzyv {
+        padding: 65px 20px;
+    }
+
+    .otzyv-title {
+        margin-bottom: 35px;
+    }
+
+    .otzyv-title h2 {
+        font-size: 38px;
+    }
+
+    .otzyv-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .otzyv-card img {
+        height: 250px;
+    }
+
+    .otzyv-content {
+        padding: 20px;
+    }
+
+    .write-otzyv {
+        margin-top: 45px;
+        padding: 25px 20px;
+    }
+
+    .write-otzyv h3 {
+        font-size: 30px;
+    }
+
+    .student-offer {
+        padding: 65px 20px;
+    }
+
+    .student-offer h2 {
+        font-size: 38px;
+    }
+
+    .offer-content {
+        padding: 28px 20px;
+    }
+
+    .offer-content strong {
+        font-size: 44px;
+    }
+
+    .final-cta {
+        padding: 70px 20px;
+    }
+
+    .final-cta h2 {
+        font-size: 40px;
+    }
+
+
+    /* =====================================================
+       ANEL — MOVIES RESPONSIVE
+    ===================================================== */
+
+    .intro {
+       min-height: 430px;
+        background-position: center 60%;
+    }
+
+    .intro-content {
+        padding: 25px;
+    }
+
+    .intro h1 {
+        font-size: 38px;
+    }
+
+    .intro p:last-child {
+        font-size: 16px;
+    }
+
+    .movies-list {
+        padding: 55px 20px;
+    }
+
+    .movies-title {
+        margin-bottom: 35px;
+    }
+
+    .movies-title h2 {
+        font-size: 32px;
+    }
+
+    .griid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .movie-image-box {
+        height: 400px;
+    }
+
+    .trailer-button,
+    body:has(.intro) .book-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .movie-banner {
+        margin: 10px 20px 50px;
+        padding: 40px 20px;
+        min-height: 240px;
+    }
+
+    .movie-banner h2 {
+        font-size: 28px;
+    }
+
+
+    /* =====================================================
+       AIZADA — SCHEDULE RESPONSIVE
+    ===================================================== */
+
+    body:has(.schedule-intro) main {
+        width: 90%;
+    }
+
+    .schedule-intro {
+        min-height: 300px;
+        margin: 25px 0;
+        padding: 45px 20px;
+        border-radius: 12px;
+    }
+
+    .schedule-intro h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .schedule-intro p {
+        font-size: 15px;
+    }
+
+    .date-selection {
+        padding: 10px 0 25px;
+    }
+
+    .date-buttons {
+        gap: 8px;
+    }
+
+    .date-buttons button {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .schedule-filters {
+        flex-direction: column;
+        gap: 15px;
+        margin: 15px 0 30px;
+        padding: 20px;
+    }
+
+    .movie-schedule {
+        padding: 20px 0 40px;
+    }
+
+    .movie-schedule > h2 {
+        font-size: 25px;
+    }
+
+    .movie-card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .movie-card img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .movie-info h3 {
+        font-size: 21px;
+    }
+
+    .ticket-prices {
+        min-width: 0;
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #66606f;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .movie-schedule .book-button {
+        width: 100%;
+    }
+
+    .outdoor-info {
+        padding: 30px 0 40px;
+    }
+
+    .info-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .info-card {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .important-info {
+        padding: 25px 20px;
+        margin-bottom: 45px;
+    }
+
+
+    /* =====================================================
+       AKNUR — CONTACT RESPONSIVE
+    ===================================================== */
+
+    .booking {
+        width: 92%;
+        margin: 35px auto;
+        padding: 25px 20px;
+        gap: 25px;
+        border-radius: 15px;
+    }
+
+    .booking-info {
+        padding: 0;
+    }
+
+    .booking-info h1 {
+        font-size: 36px;
+    }
+
+    .booking-info p {
+        font-size: 16px;
+    }
+
+    .booking-form {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .booking-form h2 {
+        font-size: 25px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .booking-form button {
+        width: 100%;
+    }
+
+    .faq {
+        width: 92%;
+        margin: 40px auto;
+        padding: 10px 0;
+    }
+
+    .faq h2 {
+        font-size: 28px;
+        margin-bottom: 22px;
+    }
+
+    .faq details {
+        padding: 16px;
+    }
+
+    .faq summary {
+        font-size: 16px;
+    }
+
+    .faq details p {
+        font-size: 14px;
+    }
+
+    .contact-us {
+        width: 92%;
+        margin: 40px auto;
+        padding: 25px 20px;
+        gap: 25px;
+        border-radius: 15px;
+    }
+
+    .contact-text h2 {
+        font-size: 32px;
+    }
+
+    .contact-text p {
+        font-size: 15px;
+    }
+
+    .contact-card {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .contact-item {
+        gap: 13px;
+        padding: 15px 0;
+    }
+
+    .contact-item span {
+        font-size: 22px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+    }
+
+    .contact-options {
+        width: 100%;
+    }
+
+    .contact-options a {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       SHARED — FOOTER
+    ===================================================== */
+
+    .movies-footer {
+        padding: 25px 20px;
+    }
+}
