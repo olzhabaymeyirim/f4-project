@@ -16,7 +16,7 @@ Outdoor cinema website "Moon & Movies"
 - contact.html — Contact
 
 ## Repository
-https://github.com/olzhabaymeyirim/assignment-about-cinema
+https://github.com/olzhabaymeyirim/f4-project.git
 
 ## Deployed website
-[сюда потом вставим GitHub Pages ссылку]
+https://olzhabaymeyirim.github.io/f4-project/
