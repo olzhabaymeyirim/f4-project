@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
 <!--макушка-->
 <header class="header">
 
@@ -29,11 +30,34 @@
             <option value="kz">KZ</option>
             <option value="ru">RU</option>
         </select>
+        <button
+    type="button"
+    id="themeButton"
+    class="theme-switch"
+    aria-label="Switch to light theme"
+    title="Switch to light theme">
+    ☀
+</button>
 
     </nav>
 
 </header>
 
+<section class="welcome-section">
+    <h2>Welcome to Moon & Movies</h2>
+
+<label for="welcomeName">Enter your name:</label>
+<input
+    type="text"
+    id="welcomeName"
+    placeholder="Your name"
+>
+
+<button type="button" id="welcomeButton">Say Hello</button>
+
+<p id="welcomeMessage" role="status" aria-live="polite"></p>
+
+</section>
 
 <main>
 <!--первая страница-->
@@ -117,7 +141,7 @@
 
         <article class="otzyv-card">
 
-            <img src="images/img1.jpg"
+            <img src="images/img1.JPG"
                  alt="Guest at outdoor cinema"
                  width="500"
                  height="300">
@@ -144,7 +168,7 @@
 
         <article class="otzyv-card">
 
-            <img src="images/img3.jpg"
+            <img src="images/img3.JPG"
                  alt="Guests watching a movie"
                  width="500"
                  height="300">
@@ -319,6 +343,7 @@
 </section>
 
 </main>
+
 <!--footer-->
 <footer class="movies-footer">
 
@@ -332,6 +357,7 @@
 
 </footer>
 
+<script src="js/assignment5.js" defer></script>
 
 </body>
-</html>
+</html> 

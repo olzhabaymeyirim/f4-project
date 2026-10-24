@@ -1206,60 +1206,6 @@ body:has(.booking) {
 }
 
 
-/* Contact — FAQ */
-
-.faq {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 20px;
-}
-
-.faq h2 {
-    text-align: center;
-    color: #d8b4e2;
-    margin-bottom: 30px;
-}
-
-.faq details {
-    background-color: #292438;
-
-    margin-bottom: 15px;
-    padding: 20px;
-
-    border-radius: 8px;
-    border: 1px solid #66606f;
-}
-
-.faq summary {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-
-    cursor: pointer;
-    list-style: none;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.faq summary::after {
-    content: "⌄";
-    color: #d8b4e2;
-    font-size: 24px;
-}
-
-.faq details[open] summary::after {
-    content: "⌃";
-}
-
-.faq details p {
-    color: #d8b4e2;
-    line-height: 1.6;
-    margin-top: 15px;
-}
-
-
 /* Contact — Contact section */
 
 .contact-us {
@@ -1414,4 +1360,411 @@ body:has(.booking) {
 
 body:has(.main-part) .movies-footer p:first-child {
     margin-bottom: 8px;
+}
+
+/* =========================================================
+   REGISTRATION PAGE
+========================================================= */
+
+body:has(.registration-card) {
+    background-color: #211c35;
+    color: #ffffff;
+}
+
+.registration-card {
+    width: 100%;
+    padding: 30px;
+    background-color: #292438;
+    border: 1px solid #66606f;
+    border-radius: 15px;
+}
+
+.registration-card h1 {
+    color: #d8b4e2;
+    font-size: 36px;
+}
+
+.registration-card p {
+    color: #d8b4e2;
+}
+
+.registration-card label,
+.registration-card legend {
+    color: #ffffff;
+}
+
+.registration-card .form-control,
+.registration-card .form-select {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 10px 12px;
+    border: 1px solid #66606f;
+    border-radius: 6px;
+    background-color: #211c35;
+    color: #ffffff;
+}
+
+.registration-card .form-control:focus,
+.registration-card .form-select:focus {
+    border-color: #d8b4e2;
+    box-shadow: 0 0 0 0.2rem rgba(216, 180, 226, 0.2);
+}
+
+.registration-card .form-select option {
+    background-color: #211c35;
+    color: #ffffff;
+}
+
+.registration-card .form-check {
+    margin-bottom: 8px;
+}
+
+.registration-card .form-check-input {
+    padding: 0;
+    margin-top: 0.35em;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.registration-card .form-check-label {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.registration-card .invalid-feedback {
+    color: #ffb3c1;
+}
+
+.registration-card .btn-primary {
+    background-color: #d8b4e2;
+    border-color: #d8b4e2;
+    color: #211c35;
+}
+
+.registration-card .btn-primary:hover {
+    background-color: #9b6bb0;
+    border-color: #9b6bb0;
+    color: #ffffff;
+}
+
+.registration-card .btn-secondary {
+    background-color: transparent;
+    border-color: #d8b4e2;
+    color: #ffffff;
+}
+
+.registration-card .btn-secondary:hover {
+    background-color: #d8b4e2;
+    color: #211c35;
+}
+
+@media (max-width: 576px) {
+    .registration-card {
+        padding: 20px 16px;
+    }
+
+    .registration-card h1 {
+        font-size: 28px;
+    }
+}
+
+/* TASK 3: Movie Search */
+
+.movie-search {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.movie-search label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.movie-search input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #9b6bb0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#movieCount {
+    margin-top: 12px;
+}
+
+#noResults {
+    color: #d8b4e2;
+    font-weight: bold;
+}
+
+.movie-list[hidden] {
+    display: none !important;
+}
+/* TASK 4: Movie Night Wishlist */
+
+.wishlist-section {
+    padding: 45px 20px;
+    background-color: #292438;
+    color: #fff;
+    text-align: center;
+}
+
+.wishlist-section h2 {
+    margin-bottom: 12px;
+    color: #d8b4e2;
+}
+
+#wishlistForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 25px auto;
+}
+
+#wishlistForm label {
+    font-weight: bold;
+}
+
+#wishlistInput {
+    width: min(100%, 280px);
+    padding: 11px;
+    border: 1px solid #9b6bb0;
+    border-radius: 8px;
+}
+
+#wishlistForm button,
+#wishlistItems button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    background-color: #d8b4e2;
+    color: #211c35;
+    cursor: pointer;
+}
+
+#wishlistItems {
+    max-width: 500px;
+    margin: 20px auto;
+    padding-left: 25px;
+    text-align: left;
+}
+
+#wishlistItems li {
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+#wishlistItems button {
+    margin-left: 10px;
+}
+
+#wishlistMessage {
+    min-height: 24px;
+    color: #d8b4e2;
+}
+
+@media (max-width: 480px) {
+    #wishlistForm {
+        flex-direction: column;
+    }
+
+    #wishlistInput {
+        width: 100%;
+    }
+}
+
+/* Task 0: Welcome message */
+.welcome-section {
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #292438;
+    color: #ffffff;
+    border: 1px solid #665a75;
+    border-radius: 16px;
+}
+
+.welcome-section label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d8b4e2;
+}
+
+.welcome-section input {
+    width: min(100%, 280px);
+    padding: 12px 15px;
+    border: 1px solid #9b6bb0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #211c35;
+    font-size: 16px;
+    outline: none;
+}
+
+.welcome-section input:focus {
+    border-color: #d8b4e2;
+    box-shadow: 0 0 0 3px rgba(216, 180, 226, 0.25);
+}
+
+.welcome-section #welcomeButton {
+    margin: 10px 5px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #eab1ee;
+    color: #211c35;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.welcome-section #welcomeButton:hover {
+    background-color: #d8b4e2;
+    transform: translateY(-2px);
+}
+
+.welcome-section #welcomeButton:focus-visible {
+    outline: 2px solid #d8b4e2;
+    outline-offset: 3px;
+}
+
+.welcome-section #welcomeMessage {
+    min-height: 24px;
+    margin: 15px 0 0;
+    color: #d8b4e2;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+/* Task 1: Theme switch in the navigation */
+.theme-switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin-left: 10px;
+    border: 1px solid rgba(216, 180, 226, 0.6);
+    border-radius: 50%;
+    background: transparent;
+    color: #f3d9a5;
+    font-size: 23px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.theme-switch:hover {
+    background-color: rgba(216, 180, 226, 0.15);
+    color: #ffffff;
+}
+
+.theme-switch:focus-visible {
+    outline: 2px solid #d8b4e2;
+    outline-offset: 3px;
+}
+
+/* Light theme */
+body.light-theme {
+    background-color: #f7f3ee;
+    color: #211c35;
+}
+
+body.light-theme header {
+    background-color: #ffffff;
+    color: #211c35;
+}
+
+body.light-theme .theme-switch {
+    color: #654078;
+    border-color: #b9a9c2;
+}
+
+body.light-theme .theme-switch:hover {
+    background-color: #eee4f0;
+    color: #211c35;
+}
+
+body.light-theme .main-part,
+body.light-theme .about,
+body.light-theme .otzyv,
+body.light-theme .write-otzyv,
+body.light-theme .student-offer,
+body.light-theme .final-cta,
+body.light-theme .intro,
+body.light-theme .movies-list,
+body.light-theme .booking,
+body.light-theme .contact-us {
+    background-color: #f7f3ee;
+    color: #211c35;
+}
+
+body.light-theme .movie-list,
+body.light-theme .booking-form,
+body.light-theme .faq-item {
+    background-color: #ffffff;
+    color: #211c35;
+}
+
+
+/* Task 2: FAQ styling */
+
+.faq-item {
+    margin: 14px auto;
+    max-width: 800px;
+    border: 1px solid #665a75;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    display: block;
+    width: 100%;
+    padding: 20px 16px;
+    border: none;
+    background-color: #292438;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    background-color: #352c46;
+}
+
+.faq-question::after {
+    content: "⌄";
+    float: right;
+    color: #d8b4e2;
+    font-size: 20px;
+}
+
+.faq-question[aria-expanded="true"]::after {
+    content: "⌃";
+}
+
+.faq-answer {
+    padding: 12px 16px;
+    background-color: #211c35;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.faq-answer[hidden] {
+    display: none;
 }
