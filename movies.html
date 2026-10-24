@@ -78,8 +78,22 @@
             </div>
 
 
-            <!-- Movie list -->
-            <div class="griid">
+            <!-- Movie search -->
+                    <div class="movie-search">
+            <label for="movieSearch">Search movies:</label>
+            <input
+                type="text"
+                id="movieSearch"
+                placeholder="Type a movie title..."
+            >
+            <p id="movieCount" role="status" aria-live="polite">
+                Showing 6 movies
+            </p>
+            <p id="noResults" hidden>No results found.</p>
+        </div>
+
+        <!-- Movie list -->
+        <div class="griid"> 
 
 
                 <!-- 1 -->
@@ -355,6 +369,30 @@
         </section>
 
     </main>
+    
+<section class="wishlist-section">
+    <h2>Movie Night Wishlist</h2>
+    <p>Add movies you want to watch during our cinema nights!</p>
+
+    <form id="wishlistForm">
+        <label for="wishlistInput">Movie title:</label>
+        <input
+            type="text"
+            id="wishlistInput"
+            placeholder="Enter a movie title"
+        >
+        <button type="submit">Add Movie</button>
+    </form>
+
+    <p id="wishlistCount" role="status" aria-live="polite">
+        Movies in your wishlist: 0
+    </p>
+
+    <ul id="wishlistItems"></ul>
+
+    <p id="wishlistMessage" role="status" aria-live="polite"></p>
+</section>
+
 
 
     <!-- Footer -->
@@ -369,6 +407,6 @@
         </p>
 
     </footer>
-
+<script src="js/assignment5.js" defer></script>
 </body>
 </html>
